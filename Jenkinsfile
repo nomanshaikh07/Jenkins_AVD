@@ -1,13 +1,13 @@
 pipeline {
     agent {
         node {
-            label 'jenkins_slave_node1'
+            label 'jenkins_slave_node'
         }
     }
     stages {
         stage("checkout Code") {
             steps {
-                git url:'https://github.com/sibeshpatel9490/streamlitapp.git', branch:'main'
+                git url:'https://github.com/nomanshaikh07/Jenkins_AVD.git', branch:'main'
             }
         }
              stage("Build Docker image") {
